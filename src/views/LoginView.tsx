@@ -31,15 +31,15 @@ const changeHandler = (e: { target: { name: string; value: string; }; }) => {
         <div className="title">
           <h1>Log in</h1>
         </div>
-        <div className="text-name">
+        <label htmlFor="name" className="text-name">
            Username:
-        </div>
+        </label>
         <div className="input-name">
             <input name='name' value={user.name} type='text' onChange={changeHandler} />
         </div>
-        <div className="text-password">
+        <label htmlFor="Password" className="text-password">
           Password: 
-        </div>
+        </label>
         <div className="input-password">
           <input name="password" value={user.password} type='password' onChange={changeHandler} />
         </div>
