@@ -1,0 +1,66 @@
+
+.header {
+  background-color: #cecccc;
+  width: 100vw;
+  height: 80px;
+  display: grid;
+  grid-template-columns: 1fr auto 1fr;
+  grid-template-areas:
+  "logo user nav" ;
+}
+
+.logo-title {
+  grid-area: logo;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.logo-title img {
+  width: 50px;
+  margin: 15px 15px 15px 25px;
+  cursor: pointer;
+}
+
+.user {
+  grid-area: user;
+  display: flex;
+  align-items: center;
+  color: rgba(53, 37, 37, 0.747);
+}
+
+nav {
+  grid-area: nav;
+}
+
+nav ul {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  list-style: none;
+  margin-right: 50px;
+  height: 100%;
+}
+
+nav ul li {
+  margin: 15px;
+  width: 120px;
+  height: 45px;
+  font-size: 1.2rem;
+  background-color: rgb(32, 31, 31);
+  color: rgb(233, 233, 233);
+  border-radius: 12px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+nav ul li:hover {
+  background-color: #e5ec63;
+  color:  rgb(32, 31, 31);
+}
+
+.greeting {
+  text-align: center;
+}

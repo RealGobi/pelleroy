@@ -1,6 +1,6 @@
 
 
-export const UserBoard = () => {
+export const UserBoardView = () => {
   return (
     <div>
       User board

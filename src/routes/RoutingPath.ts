@@ -1,6 +1,10 @@
 
-const UserBoard: string = '/user-board';
+const UserBoardView: string = '/user-board';
+const ToolsView: string = '/tools';
+const LoginView: string = '/';
 
 export default {
-  UserBoard
+  UserBoardView,
+  ToolsView,
+  LoginView
 }

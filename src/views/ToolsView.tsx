@@ -1,5 +1,5 @@
 
-export const Tools = () => {
+export const ToolsView = () => {
   return (
     <div>
       Tools
