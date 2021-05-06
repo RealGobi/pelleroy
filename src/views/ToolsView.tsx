@@ -1,7 +1,7 @@
 
 export const ToolsView = () => {
   return (
-    <div>
+    <div className="content">
       Tools
     </div>
   )
