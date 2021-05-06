@@ -46,6 +46,9 @@ const changeHandler = (e: { target: { name: string; value: string; }; }) => {
         <div className="button">
           <button onClick={()=> logInHandler()}>Logga in</button>
         </div>
+        <div className='to-login'>
+          <p onClick={()=> history.push(RoutingPath.SignUpView)} >Already have an account?</p>
+        </div>
       </div>
     </div>
   );
