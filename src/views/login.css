@@ -1,8 +1,28 @@
 
-.login-view {
+.login-view, .sigup-view {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+ 
+.signup-view-card{
+    margin: 5%;
+    width: 400px;
+    height: auto;
+    background:rgba(128, 128, 128, 0.927);
+    border-radius: 8px;
+    box-shadow: 2px 2px 12px grey;
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows:90px 50px 50px 50px 50px 25px;
+    grid-template-areas: 
+    "title title"
+    "text-name input-name"
+    "text-password input-password"
+    "text-code input-code"
+    "button button"
+    "to-login to-login"
+    ;
 }
 
 .card {
@@ -14,12 +34,13 @@
   box-shadow: 2px 2px 12px grey;
   display: grid;
   grid-template-columns: auto;
-  grid-template-rows:90px 50px 50px 90px;
+  grid-template-rows:90px 50px 50px 50px 25px;
   grid-template-areas: 
   "title title"
   "text-name input-name"
   "text-password input-password"
   "button button"
+  "to-login to-login"
   ;
 }
 
@@ -47,6 +68,25 @@
   align-items: center;
 }
 
+.text-code {
+  grid-area: text-code;
+  display: flex;
+  align-items: center;
+} 
+
+.input-code {
+  grid-area: input-code;
+  display: flex;
+  align-items: center;
+}
+
+.to-login {
+  grid-area: to-login;
+  text-align: center;
+  cursor: pointer;
+  margin-top: 5px;
+}
+
 .button {
   grid-area: button;
 }
@@ -63,7 +103,7 @@
   align-items: center;
 }
 
-.text-name, .text-password {
+.text-name, .text-password, .text-code {
   display: flex;
   align-items: center;
   justify-content: flex-end;
@@ -72,7 +112,7 @@
 
 }
 
-.input-name input[type=text], .input-password input[type=password] {
+.input-name input[type=text], .input-password input[type=password], .input-code input[type=password] {
   border-radius: 8px;
   padding: 6px;
   font-size: 18px;
